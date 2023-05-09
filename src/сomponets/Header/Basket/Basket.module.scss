@@ -1,0 +1,39 @@
+.basket {
+  text-align: right;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #555;
+  width: 550px;
+  min-height: 120px;
+  position: fixed;
+  z-index: 999;
+  left: 890px;
+  top: 100px;
+  @media (max-width: 1280px) {
+    left: 453px;
+  }
+}
+.basketNone {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  font-size: 20px;
+  text-align: right;
+  margin: 10px;
+}
+.order {
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0 10px 10px 0;
+  background-color: #ffbd5b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.order:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,31 @@
+.image {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  .text {
+    color: #303030;
+    font-size: 30px;
+    font-weight: 600;
+    width: 220px;
+    top: 320px;
+    left: 1050px;
+    position: absolute;
+    z-index: 1;
+    @media (max-width: 1280px) {
+      font-size: 24px;
+      top: 310px;
+      left: 820px;
+    }
+  }
+  .weight {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  img {
+    z-index: 0;
+    width: 1280px;
+    @media (max-width: 1280px) {
+      width: 1000px;
+    }
+  }
+}

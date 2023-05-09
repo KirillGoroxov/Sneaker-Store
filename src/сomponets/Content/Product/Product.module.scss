@@ -1,0 +1,47 @@
+.product {
+  // border: 1px solid #222;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  margin: 8px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffbd5b;
+    font-size: 16px;
+    color: #222;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  .title {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .price {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+.product:hover {
+  box-shadow: 2px 2px 4px #555;
+}
+.opacity {
+  position: absolute;
+  transition: opacity 0.4s;
+}
+.opacity:hover {
+  opacity: 0;
+}

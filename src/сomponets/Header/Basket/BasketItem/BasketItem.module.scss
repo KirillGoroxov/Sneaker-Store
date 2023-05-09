@@ -1,0 +1,37 @@
+.basketItem {
+  display: grid;
+  grid-template: 1fr/110px 180px 130px 80px 40px;
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  .counter {
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      width: 25px;
+      height: 25px;
+      margin: 0 6px;
+      border: none;
+      background-color: #bbbbbb;
+      border-radius: 5px;
+      color: #2c2c2c;
+    }
+  }
+}
+.basketItem:hover {
+  transform: scale(1.05);
+}
+.sneaker {
+  margin: 0 50px 20px 15px;
+  width: 80px;
+  height: 80px;
+}
+.delete {
+  margin: 0 0 3px 16px;
+  width: 20px;
+}
+.title {
+  text-align: left;
+}

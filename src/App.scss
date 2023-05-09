@@ -1,0 +1,13 @@
+.App {
+  overflow-x: hidden;
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 100px 1fr 100px/100%;
+  grid-template-areas: 'h' 'c' 'f';
+  @media (max-width: 1280px) {
+    width: 1000px;
+    grid-template: 100px 1fr 100px/100%;
+    grid-template-areas: 'h' 'c' 'f';
+  }
+}
