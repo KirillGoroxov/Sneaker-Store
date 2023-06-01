@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -18,10 +17,11 @@
 body {
   overflow-x: hidden;
   overflow: overlay;
-  background-color: #fff;
   color: #222;
   font-family: 'Montserrat';
   font-weight: 300;
+  background-image: url('./../public/images/back.jpg');
+  background-attachment: fixed;
 }
 body::-webkit-scrollbar {
   width: 8px;
