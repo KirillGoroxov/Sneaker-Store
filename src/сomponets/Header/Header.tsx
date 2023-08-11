@@ -9,18 +9,20 @@ const Header: React.FC = () => {
   }
   document.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
-      (document.getElementById('header') as HTMLHeadElement).style.backgroundColor = '#d6d6d6'
+      ;(
+        document.getElementById('header') as HTMLHeadElement
+      ).style.backgroundColor = '#d6d6d6'
     }
     if (window.scrollY < 30) {
-      (document.getElementById('header') as HTMLHeadElement).style.backgroundColor = ''
+      ;(
+        document.getElementById('header') as HTMLHeadElement
+      ).style.backgroundColor = ''
     }
   })
   return (
-    <header className={c.wrapper} id='header'>
+    <header className={c.wrapper} id="header">
       <Navbar changeBasket={changeBasket} />
-      <Basket
-        basket={basket}
-        setBasket={setBasket} />
+      <Basket basket={basket} setBasket={setBasket} />
     </header>
   )
 }

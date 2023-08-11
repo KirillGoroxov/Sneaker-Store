@@ -1,6 +1,6 @@
 import c from './Product.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
-import { addProduct } from '../../../store/basket';
+import { addProduct } from '../../../store/basket'
 import { RootState } from '../../../store'
 
 type PropsType = {
@@ -21,22 +21,24 @@ const Product: React.FC<PropsType> = (props) => {
       addBasket.style.transform = ''
     }, 300)
     const id = (e.target as HTMLButtonElement).id
-    const newItem = items.find(i => i.id === id)
+    const newItem = items.find((i) => i.id === id)
     dispatch(addProduct({ newItem, basket }))
   }
   return (
-    <div className={c.product}>
+    <figure className={c.product}>
+      <img src={props.image + '1.jpg'} alt="" className={c.opacity} />
       <img
-        src={props.image + '1.jpg'} alt=""
-        className={c.opacity} />
-      <img
-        src={props.image + '2.jpg'} alt=""
+        src={props.image + '2.jpg'}
+        alt=""
         id={props.id}
-        className={c.opacity_2} />
-      <div className={c.title}>{props.title}</div>
-      <div className={c.price}>{props.price}Р</div>
-      <button id={props.id} onClick={addItem}>В корзину</button>
-    </div>
+        className={c.opacity_2}
+      />
+      <figcaption className={c.title}>{props.title}</figcaption>
+      <figcaption className={c.price}>{props.price}Р</figcaption>
+      <button id={props.id} onClick={addItem}>
+        В корзину
+      </button>
+    </figure>
   )
 }
 export default Product

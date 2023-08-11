@@ -46,7 +46,8 @@
   display: flex;
   align-items: center;
   .basketImage {
-    filter: invert(33%) sepia(2%) saturate(29%) hue-rotate(3deg) brightness(88%) contrast(80%);
+    filter: invert(33%) sepia(2%) saturate(29%) hue-rotate(3deg) brightness(88%)
+      contrast(80%);
     transition: 0.3s;
     width: 30px;
     padding: 0 15px 10px 0;
@@ -67,11 +68,5 @@
   }
   span:hover {
     opacity: 0.5;
-  }
-  @media (max-width: 600px) {
-    // height: 80px;
-  }
-  @media (max-width: 400px) {
-    
   }
 }
