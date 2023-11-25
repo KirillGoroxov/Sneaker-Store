@@ -6,7 +6,7 @@ const Image: React.FC = () => {
         <span>Кроссовки ADIDAS NITEBALL</span>
         <div className={c.weight}>original</div>
       </div>
-      <img src="./../../../../images/head.jpg" alt="" />
+      <img src="./../../../../images/head.jpg" alt="adidas" />
     </div>
   )
 }

@@ -10,14 +10,14 @@ type PropsType = {
   basket: boolean
   setBasket: (basket: boolean) => void
 }
-const Basket: React.FC<PropsType> = (props) => {
+const Basket: React.FC<PropsType> = ({ basket, setBasket }) => {
   const basketItems = useSelector((state: RootState) => state.basket.basket)
   const allPrice = basketItems
     .map((b) => Number(b.price) * b.count)
     .reduce((a, b) => a + b, 0)
-  if (props.basket === true) {
+  if (basket === true) {
     document.body.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') props.setBasket(false)
+      if (e.key === 'Escape') setBasket(false)
     })
     document.body.addEventListener('mouseup', (e) => {
       const basket = document.getElementById(
@@ -25,17 +25,17 @@ const Basket: React.FC<PropsType> = (props) => {
       ) as HTMLDivElement
       const delivery = document.getElementById('delivery') as HTMLButtonElement
       if (e.target === delivery && basketItems.length !== 0) {
-        setTimeout(() => props.setBasket(false), 0)
+        setTimeout(() => setBasket(false), 0)
       }
       if (!basket.contains(e.target as Node)) {
-        props.setBasket(false)
+        setBasket(false)
       }
     })
   }
   return (
     <div id="basketContainer">
       {' '}
-      {props.basket && (
+      {basket && (
         <div className={c.basket}>
           {/*Если корзина пуста  */}
           {basketItems.length === 0 ? (
