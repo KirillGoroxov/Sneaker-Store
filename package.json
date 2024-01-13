@@ -1,33 +1,37 @@
 {
-  "name": "ecommerce",
+  "name": "sneakers-store",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.5",
-    "classnames": "^2.3.2",
+    "@reduxjs/toolkit": "^2.0.1",
+    "autoprefixer": "^10.4.16",
+    "nanoid": "^5.0.4",
+    "postcss": "^8.4.33",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5",
-    "react-router-dom": "^6.11.0",
-    "redux": "^4.2.1",
-    "sass": "^1.62.0"
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.21.2",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^4.0.0-beta.0",
-    "eslint": "^8.38.0",
-    "eslint-plugin-react": "^7.32.2",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
-    "prettier": "2.8.8",
-    "vite": "^4.3.0"
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "sass": "^1.69.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }

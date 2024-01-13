@@ -1,0 +1,5 @@
+@use '../../styles/mixins.scss';
+.shop {
+  @apply font-inter font-light overflow-hidden text-[#222];
+  @include mixins.shop;
+}

@@ -1,11 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
-import products from './products'
-import basket from './basket'
+import { configureStore } from '@reduxjs/toolkit';
+import basket from './basket';
+import sneakers from './sneakers';
 const store = configureStore({
   reducer: {
-    products: products,
+    sneakers: sneakers,
     basket: basket,
   },
-})
-export default store
-export type RootState = ReturnType<typeof store.getState>
+});
+export default store;
+export type RootState = ReturnType<typeof store.getState>;

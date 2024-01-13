@@ -1,0 +1,59 @@
+.product {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: 0.3s;
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffbd5b;
+    font-size: 16px;
+    color: #222;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 810px) {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  @media (max-width: 600px) {
+    width: 350px;
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 400px) {
+    width: 270px;
+    img {
+      width: 270px;
+      height: 270px;
+    }
+  }
+}
+.product:hover {
+  box-shadow: 3px 3px 4px #555;
+}
+.opacity {
+  position: absolute;
+  transition: opacity 0.4s;
+}
+.opacity:hover {
+  opacity: 0;
+}

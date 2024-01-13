@@ -1,0 +1,74 @@
+.basket_container {
+  top: 100px;
+  position: absolute;
+  right: 0px;
+  z-index: 999;
+  width: 500px;
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basket {
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 400px;
+    .basketNone {
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .fixed {
+    border-top: 1px solid #919191;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    @media (max-width: 400px) {
+      flex-direction: column;
+      height: 120px;
+    }
+    .price {
+      font-size: 28px;
+      text-align: right;
+      margin: 30px;
+      @media (max-width: 400px) {
+        margin: 10px 0;
+        order: 2;
+      }
+    }
+    .order {
+      @apply bg-shop-orange;
+      border: none;
+      font-size: 18px;
+      margin: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+      padding: 10px 20px;
+      @media (max-width: 600px) {
+        padding: 10px 15px;
+      }
+      @media (max-width: 400px) {
+        margin: 15px 0 10px 0;
+      }
+    }
+    .order:hover {
+      transform: scale(1.05);
+    }
+    .basket::-webkit-scrollbar {
+      width: 4px;
+    }
+    .basket::-webkit-scrollbar-thumb {
+      background-color: rgba(143, 143, 143, 0.8);
+      border-radius: 4px;
+    }
+  }
+}

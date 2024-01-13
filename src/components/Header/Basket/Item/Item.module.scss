@@ -1,0 +1,147 @@
+.deliveryItem {
+  display: grid;
+  grid-template-columns: 130px 480px 100px 140px 50px;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 5px;
+  font-size: 22px;
+  overflow: hidden;
+  width: 100%;
+  @media (max-width: 1280px) {
+    grid-template-columns: 120px 320px 100px 100px 40px;
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: 120px 400px 100px 100px 40px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 120px 250px 100px 100px 40px;
+  }
+  @media (max-width: 600px) {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .counter {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    @media (max-width: 600px) {
+      margin-left: 15px;
+    }
+    :first-child {
+      width: 24px;
+      cursor: pointer;
+    }
+    :last-child {
+      width: 26px;
+      cursor: pointer;
+    }
+  }
+  .sneaker {
+    width: 100px;
+    margin-left: 20px;
+    @media (max-width: 400px) {
+      width: 80px;
+    }
+  }
+  .delete {
+    margin-right: 25px;
+    cursor: pointer;
+    @media (max-width: 600px) {
+      margin-bottom: 5px;
+    }
+  }
+  .title {
+    margin-left: 10px;
+    @media (max-width: 600px) {
+      width: 250px;
+      font-size: 22px;
+    }
+    @media (max-width: 400px) {
+      width: 180px;
+      font-size: 18px;
+    }
+  }
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 90px 180px 90px 95px 45px;
+  font-size: 22px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 10px;
+  text-transform: lowercase;
+  @media (max-width: 768px) {
+    grid-template-columns: 100px 220px 100px 100px 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 16px;
+    grid-template-columns: 60px 140px 100px 60px 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    font-size: 28px;
+    @media (max-width: 400px) {
+      margin-left: -10px;
+    }
+    :first-child {
+      cursor: pointer;
+      width: 24px;
+      @media (max-width: 600px) {
+        width: 20px;
+      }
+    }
+    :last-child {
+      cursor: pointer;
+      width: 26px;
+      @media (max-width: 600px) {
+        width: 22px;
+      }
+    }
+  }
+
+  .sneaker {
+    margin-bottom: 15px;
+    width: 80px;
+    @media (max-width: 768px) {
+      width: 90px;
+    }
+    @media (max-width: 600px) {
+      width: 50px;
+    }
+    @media (max-width: 400px) {
+      width: 80px;
+      margin-right: 16px;
+    }
+  }
+  .delete {
+    margin: 0 20px 5px 0;
+    width: 20px;
+    @media (max-width: 768px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 600px) {
+      margin-left: 3px;
+    }
+  }
+  .title {
+    text-align: left;
+    @media (max-width: 400px) {
+      margin-right: 4px;
+    }
+  }
+}

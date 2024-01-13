@@ -1,0 +1,17 @@
+.background {
+  position: fixed;
+  background-image: url('/back.jpg');
+  overflow-x: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,75 @@
+.image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 135px;
+  z-index: 0;
+  .text {
+    line-height: 20px;
+    width: 170px;
+    bottom: 130px;
+    right: 80px;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-10deg);
+    @media (max-width: 1280px) {
+      bottom: 70px;
+      right: 50px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 26px;
+      width: 145px;
+      bottom: 40px;
+      right: 40px;
+    }
+    @media (max-width: 768px) {
+      width: 115px;
+      right: 20px;
+      bottom: 20px;
+    }
+    @media (max-width: 600px) {
+      width: 85px;
+      bottom: 10px;
+      line-height: 16px;
+    }
+    @media (max-width: 400px) {
+      width: 55px;
+      line-height: 11px;
+      right: 15px;
+      bottom: 15px;
+    }
+    p {
+      @apply font-pacific text-[28px] text-right  text-[#c1645c];
+      @media (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media (max-width: 600px) {
+        font-size: 16px;
+      }
+      @media (max-width: 400px) {
+        font-size: 14px;
+      }
+    }
+    b {
+      font-size: 60px;
+      font-weight: 600;
+      color: #303030;
+      @media (max-width: 1000px) {
+        font-size: 50px;
+      }
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
+    }
+  }
+  img {
+    z-index: 0;
+    border-radius: 10px;
+  }
+}

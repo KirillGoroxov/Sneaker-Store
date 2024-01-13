@@ -1,0 +1,53 @@
+.search {
+  margin: 30px 0;
+  z-index: 1;
+  position: relative;
+  input {
+    font-weight: 200;
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #999 !important;
+    font-size: 20px;
+    border-radius: 5px;
+    @media (max-width: 600px) {
+      width: 340px;
+      font-size: 16px;
+    }
+    @media (max-width: 400px) {
+      width: 260px;
+      height: 35px;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  @media (max-width: 810px) {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  @media (max-width: 400px) {
+    margin: 10px 0;
+  }
+}
+.sneakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: space-between;
+  margin-bottom: 20px;
+  @media (max-width: 1000px) {
+    justify-content: space-around;
+  }
+  @media (max-width: 810px) {
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, 350px);
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(auto-fill, 270px);
+  }
+}
